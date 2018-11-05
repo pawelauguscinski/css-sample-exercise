@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chop-Chop Sample #1</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+        <div class="upper-bar"></div>
         <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item menu__item--left"><a class="menu__link menu__link--active" href="javascript:void(0);">Menu</a></li>
+            <ul class="menu__items">
+                <li class="menu__item"><a class="menu__link menu__link--active" href="javascript:void(0);">Home</a></li>
                 <li class="menu__item"><a class="menu__link" href="javascript:void(0);">Sample link</a></li>
-                <li class="menu__item"><img class="menu__image" src="img/brand.png"/></li>
-                <li class="menu__item"><a class="menu__link" href="javascript:void(0);">Sample link</a></li>
+                <li class="menu__item menu__item--right"><a class="menu__link" href="javascript:void(0);">Sample link</a></li>
                 <li class="menu__item menu__item--right"><a class="menu__link" href="javascript:void(0);">Contact</a></li>
             </ul>
         </nav>
-        <div class="split-line"></div>
-        <div class="hero hero--bigpadding">
-            <h1 class="hero__title">This is just a sample page</h1>
-            <button class="hero__button" type="button">push the button</button>
+        <div class="rotator">
+            <h1 class="rotator__title">This is just a sample page</h1>
+            <button class="rotator__button button" type="button">push the button</button>
         </div>
-        <div class="split-line"></div>
         <div class="articles">
             <div class="article">
                 <div class="article__header">
@@ -30,9 +29,11 @@
                 </div>
                 <div class="article__content">
                     <img class="article__thumbnail" src="img/thumbnail.png" />
-                    <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi voluptas, excepturi neque modi quos.</p>
-                    <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sit saepe recusandae ut magnam magni eaque voluptates? Necessitatibus velit, sapiente dicta odio recusandae molestias unde? Ipsam nemo assumenda atque commodi? Ipsam nemo assumenda atque commodi? Ipsam nemo assumenda atque commodi?</p>
+                    <p class="article__paragraph article__paragraph--thumbnail-side">To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad.</p>
+                    <p class="article__paragraph">To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad. To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad.
+                            To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad.</p>
                 </div>
+                <p class="article__more">czytaj więcej</p>
             </div>
             <div class="article">
                 <div class="article__header">
@@ -40,9 +41,10 @@
                 </div>
                 <div class="article__content">
                     <img class="article__thumbnail" src="img/thumbnail.png" />
-                    <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi voluptas, excepturi neque modi quos.</p>
-                    <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sit saepe recusandae ut magnam magni eaque voluptates? Necessitatibus velit, sapiente dicta odio recusandae molestias unde? Ipsam nemo assumenda atque commodi?</p>
+                    <p class="article__paragraph article__paragraph--thumbnail-side">To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad.</p>
+                    <p class="article__paragraph">To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad. To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad.</p>
                 </div>
+                <p class="article__more">czytaj więcej</p>
             </div>
             <div class="article">
                 <div class="article__header">
@@ -50,64 +52,54 @@
                 </div>
                 <div class="article__content">
                     <img class="article__thumbnail" src="img/thumbnail.png" />
-                    <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eligendi voluptas, excepturi neque modi quos.</p>
-                    <p class="article__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sit saepe recusandae ut magnam magni eaque voluptates? Necessitatibus velit, sapiente dicta odio recusandae molestias unde? Ipsam nemo assumenda atque commodi? Ipsam nemo assumenda atque commodi? Ipsam nemo assumenda atque commodi?</p>
+                    <p class="article__paragraph article__paragraph--thumbnail-side">To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad.</p>
+                    <p class="article__paragraph">To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad. To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad.
+                            To jest tekst przykładowy, kompletnie pozbawiony sensu, który nazywany jest a poo that makes everyone sad.</p>
                 </div>
+                <p class="article__more">czytaj więcej</p>
             </div>
         </div>
-        <div class="split-line"></div>
-        <div class="hero hero--smallpadding">
-            <h1 class="hero__title hero__title--smallblue">Where to find us?</h1>
-            <img class="hero__image" src="img/map.png" />
+        <div class="map">
+            <h1 class="map__title">Where to find us?</h1>
+            <img class="map__image" src="img/map.png" />
         </div>
-        <div class="hero hero--smallpadding">
-            <h1 class="hero__title hero__title--smallblue">Contact us</h1>
-        </div>
-        <div class="form">
-            <div class="form__row">
-                <div class="form__column">
-                    <input class="form__control form__input" placeholder="Imię"/>
+        <div class="contact">
+            <h1 class="contact__title">Contact us</h1>
+            <div class="contact__form">
+                <div class="contact__row">
+                    <div class="contact__item"><input type="text" class="contact__input" placeholder="imię"></div>
+                    <div class="contact__item"><input type="text" class="contact__input" placeholder="nazwisko"></div>
+                    <div class="contact__item"><input type="text" class="contact__input" placeholder="e-mail"></div>
+                    <div class="contact__item"><input type="text" class="contact__input" placeholder="telefon"></div>
                 </div>
-                <div class="form__column">
-                    <input class="form__control form__input" placeholder="Nazwisko"/>
-                </div>
-                <div class="form__column">
-                    <input class="form__control form__input" placeholder="E-mail"/>
-                </div>
-                <div class="form__column">
-                    <input class="form__control form__input" placeholder="Telefon"/>
-                </div>
-            </div>
-            <div class="form__row">
-                <div class="form__column">
-                    <textarea class="form__control form__textarea"></textarea>
-                </div>
-                <div class="form__column">
-                    <div class="form__row">
-                        <div class="form__column">
-                            <span class="form__label">Treść wiadomości</span>
-                        </div>
+                <div class="contact__row">
+                    <textarea class="contact__textarea"></textarea>
+                    <div class="contact__column">
+                        <span class="contact__label">treść wiadomości</span>
+                        <button class="contact__button button" type="button">wyślij wiadomość</button>
                     </div>
-                    <button class="form__button" type="button">wyślij wiadomość</button>
                 </div>
             </div>
         </div>
-        <div class="split-line"></div>
+        <div class="scrollup"><a class="scrollup__link" href="">do góry</a></div>
         <div class="footer">
-            <a class="footer__scrollup" href="">do góry</a>
             <div class="footer__content">
                 <div class="footer__menu">
-                    <a class="footer__menu__link footer__menu__link--left" href="">Home</a>
-                    <a class="footer__menu__link footer__menu__link--right" href="">Sample link</a>
-                    <a class="footer__menu__link footer__menu__link--left" href="">Sample link</a>
-                    <a class="footer__menu__link footer__menu__link--right" href="">Contact</a>
+                    <div class="footer__menu--left">
+                        <a class="footer__menu__link" href="">home</a>
+                        <a class="footer__menu__link" href="">sample link</a>
+                    </div>
+                    <div class="footer__menu--right">
+                        <a class="footer__menu__link" href="">sample link</a>
+                        <a class="footer__menu__link" href="">contact</a>
+                    </div>
                 </div>
                 <div class="footer__social">
-                    <img class="footer__social__img" src="/img/twitter.png"/>
-                    <img class="footer__social__img" src="/img/facebook.png"/>
+                    <div class="footer__social__img footer__social__img--twitter"></div>
+                    <div class="footer__social__img footer__social__img--facebook"></div>
                 </div>
                 <div class="footer__copyright">
-                    <span class="footer__copyright__content">Copyright &copy; 2018 &mdash; 2019 Sample & Pack, Inc.</span>
+                    <span class="footer__copyright__content">Copyright &copy; 2010 &mdash; 2013 Sample & Pack, Inc.</span>
                 </div>
             </div>
         </div>
